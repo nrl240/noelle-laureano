@@ -1,0 +1,26 @@
+.about {
+  display: flex;
+  /* max-height:  */
+}
+
+.aboutPhoto {
+  width: 50%;
+  margin: 0;
+  padding: 0;
+}
+
+.aboutPhoto img {
+  margin: 0;
+}
+
+.aboutText {
+  /* font-family: 'Roboto', sans-serif; */
+  font-family: 'Source Sans Pro', sans-serif;
+  padding: 2em 2em;
+  width: 50%;
+}
+
+.aboutText h4 {
+  line-height: 1.6;
+  font-weight: 300;
+}

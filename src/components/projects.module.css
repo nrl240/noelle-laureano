@@ -1,0 +1,242 @@
+.projectsContainer {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.projectsSection h1 {
+  font-family: 'Poiret One', cursive;
+  padding: 0.5em 0.75em;
+  background: #f7484e;
+  color: #fff;
+}
+
+hr {
+  text-align: center;
+  width: 80%;
+  border: 0;
+  height: 1px;
+  background: #333;
+  background-image: linear-gradient(to right, #ccc, #333, #ccc);
+  margin-left: 15%;
+  margin-right: 15%;
+}
+
+.project {
+  display: flex;
+  align-items: center;
+  /* margin: 0 1.5em 2.5em; */
+  margin: 1.5em 8em;
+  /* padding: 1em 0; */
+  /* NEW */
+  /* flex: 1; */
+  /* max-width: 45%; */
+  /* border: 5px solid white; */
+  /* NEW END */
+}
+
+/* .project:last-child {
+  margin-bottom: 0;
+} */
+
+/* NEW */
+@media screen and (max-width: 800px) {
+  .project {
+    min-width: 45%;
+    margin: 1em 1.75em;
+    flex-wrap: wrap;
+  }
+}
+
+/* @media screen and (max-width: 600px) {
+  .project {
+    min-width: 50%;
+  }
+} */
+/* NEW END */
+
+.description {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 50%;
+}
+
+.nameAndLinks {
+  display: flex;
+  align-items: baseline;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+/* NEW */
+
+.nameAndLinks a {
+  font-family: 'Source Sans Pro', sans-serif;
+  color: #374341;
+  text-decoration: none;
+  margin: 0.5em 0.5em;
+  position: relative;
+	display: inline-block;
+	outline: none;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	font-weight: 400;
+  /* text-shadow: 0 0 1px rgba(255,255,255,0.3); */
+  text-shadow: #374341;
+}
+
+/* ADDED */
+
+/* Effect 14: border switch */
+.nameAndLinks a {
+	padding: 0 20px;
+	height: 45px;
+	line-height: 45px;
+}
+
+.nameAndLinks a::before,
+.nameAndLinks a::after {
+	position: absolute;
+	width: 45px;
+	height: 1.5px;
+	background: #374341;
+	content: '';
+	opacity: 0.2;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	transition: all 0.3s;
+	pointer-events: none;
+}
+
+.nameAndLinks a::before {
+	top: 0;
+	left: 0;
+	-webkit-transform: rotate(90deg);
+	-moz-transform: rotate(90deg);
+	transform: rotate(90deg);
+	-webkit-transform-origin: 0 0;
+	-moz-transform-origin: 0 0;
+	transform-origin: 0 0;
+}
+
+.nameAndLinks a::after {
+	right: 0;
+	bottom: 0;
+	-webkit-transform: rotate(90deg);
+	-moz-transform: rotate(90deg);
+	transform: rotate(90deg);
+	-webkit-transform-origin: 100% 0;
+	-moz-transform-origin: 100% 0;
+	transform-origin: 100% 0;
+}
+
+.nameAndLinks a:hover::before,
+.nameAndLinks a:hover::after,
+.nameAndLinks a:focus::before,
+.nameAndLinks a:focus::after {
+	opacity: 1;
+}
+
+.nameAndLinks a:hover::before,
+.nameAndLinks a:focus::before {
+	left: 50%;
+	-webkit-transform: rotate(0deg) translateX(-50%);
+	-moz-transform: rotate(0deg) translateX(-50%);
+	transform: rotate(0deg) translateX(-50%);
+}
+
+.nameAndLinks a:hover::after,
+.nameAndLinks a:focus::after {
+	right: 50%;
+	-webkit-transform: rotate(0deg) translateX(50%);
+	-moz-transform: rotate(0deg) translateX(50%);
+	transform: rotate(0deg) translateX(50%);
+}
+
+/* ADDED END */
+
+.projectname {
+  margin: 0 0.5em 0 0;
+  padding: 0;
+}
+
+.excerpt {
+  margin-bottom: 1em;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+.mockupContainer {
+  position: relative;
+  margin: 0 1em;
+}
+
+.mockupContainer:hover .mockupOverlay {
+  opacity: 1;
+}
+
+.mockup {
+  display: block;
+  margin: 0;
+}
+
+.mockupOverlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: 0.7s ease;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+}
+
+.techStack {
+  text-align: center;
+  padding: 0 0 0.5em 0;
+  /* new: */
+  position: absolute;
+  align-self: center;
+  justify-content: center;
+}
+
+.techStack img {
+  width: 6em;
+  max-width: 100%;
+  vertical-align: middle;
+  margin: 0.75em 0.75em;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+}
+
+.buttons a {
+  margin: 0 1em;
+  border-radius: 15px;
+}
+
+.buttons button {
+  background-color: #cc6666;
+  padding: 0.1em 0.75em;
+  border-radius: 15px;
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  -webkit-transition-duration: 0.5s; /* Safari */
+  transition-duration: 0.5s;
+  cursor: pointer;
+}
+
+.buttons button:hover {
+  background-color: #cc9999;
+  color: white; /* Text color */
+}
