@@ -6,40 +6,27 @@
 .projectsSection h1 {
   font-family: 'Poiret One', cursive;
   padding: 0.5em 0.75em;
+  margin: 0;
   background: #f7484e;
   color: #fff;
 }
 
-hr {
+.projectHR {
   text-align: center;
   width: 80%;
-  border: 0;
   height: 1px;
   background: #333;
   background-image: linear-gradient(to right, #ccc, #333, #ccc);
-  margin-left: 15%;
-  margin-right: 15%;
+  margin:1em 15%;
 }
 
 .project {
   display: flex;
   align-items: center;
-  /* margin: 0 1.5em 2.5em; */
-  margin: 1.5em 8em;
-  /* padding: 1em 0; */
-  /* NEW */
-  /* flex: 1; */
-  /* max-width: 45%; */
-  /* border: 5px solid white; */
-  /* NEW END */
+  margin: 1em 8em;
 }
 
-/* .project:last-child {
-  margin-bottom: 0;
-} */
-
-/* NEW */
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 875px) {
   .project {
     min-width: 45%;
     margin: 1em 1.75em;
@@ -47,55 +34,46 @@ hr {
   }
 }
 
-/* @media screen and (max-width: 600px) {
-  .project {
-    min-width: 50%;
-  }
-} */
-/* NEW END */
-
 .description {
-  flex: 1;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  width: 50%;
+  flex: 1;
+  min-width: 50%;
+  margin: 1em;
 }
 
 .nameAndLinks {
   display: flex;
+  flex-wrap: wrap;
   align-items: baseline;
   font-family: 'Source Sans Pro', sans-serif;
 }
 
-/* NEW */
+.linksContainer {
+  display: flex;
+}
 
-.nameAndLinks a {
-  font-family: 'Source Sans Pro', sans-serif;
-  color: #374341;
-  text-decoration: none;
-  margin: 0.5em 0.5em;
+/* Visit and GitHub link effects */
+.linksContainer a {
   position: relative;
 	display: inline-block;
 	outline: none;
-	text-transform: uppercase;
-	letter-spacing: 1px;
+  font-family: 'Source Sans Pro', sans-serif;
 	font-weight: 400;
-  /* text-shadow: 0 0 1px rgba(255,255,255,0.3); */
+	letter-spacing: 1px;
+  color: #374341;
   text-shadow: #374341;
-}
-
-/* ADDED */
-
-/* Effect 14: border switch */
-.nameAndLinks a {
-	padding: 0 20px;
+  text-decoration: none;
+	text-transform: uppercase;
+  margin: 0.5em 0.5em;
+  padding: 0 10px;
 	height: 45px;
 	line-height: 45px;
 }
 
-.nameAndLinks a::before,
-.nameAndLinks a::after {
+.linksContainer a::before,
+.linksContainer a::after {
 	position: absolute;
 	width: 45px;
 	height: 1.5px;
@@ -108,7 +86,7 @@ hr {
 	pointer-events: none;
 }
 
-.nameAndLinks a::before {
+.linksContainer a::before {
 	top: 0;
 	left: 0;
 	-webkit-transform: rotate(90deg);
@@ -119,7 +97,7 @@ hr {
 	transform-origin: 0 0;
 }
 
-.nameAndLinks a::after {
+.linksContainer a::after {
 	right: 0;
 	bottom: 0;
 	-webkit-transform: rotate(90deg);
@@ -130,44 +108,65 @@ hr {
 	transform-origin: 100% 0;
 }
 
-.nameAndLinks a:hover::before,
-.nameAndLinks a:hover::after,
-.nameAndLinks a:focus::before,
-.nameAndLinks a:focus::after {
+.linksContainer a:hover::before,
+.linksContainer a:hover::after,
+.linksContainer a:focus::before,
+.linksContainer a:focus::after {
 	opacity: 1;
 }
 
-.nameAndLinks a:hover::before,
-.nameAndLinks a:focus::before {
+.linksContainer a:hover::before,
+.linksContainer a:focus::before {
 	left: 50%;
 	-webkit-transform: rotate(0deg) translateX(-50%);
 	-moz-transform: rotate(0deg) translateX(-50%);
 	transform: rotate(0deg) translateX(-50%);
 }
 
-.nameAndLinks a:hover::after,
-.nameAndLinks a:focus::after {
+.linksContainer a:hover::after,
+.linksContainer a:focus::after {
 	right: 50%;
 	-webkit-transform: rotate(0deg) translateX(50%);
 	-moz-transform: rotate(0deg) translateX(50%);
 	transform: rotate(0deg) translateX(50%);
 }
 
-/* ADDED END */
+.nameAndLinks p {
+  margin: 0;
+}
+
+.linksContainer a:hover {
+  font-family: 'Source Sans Pro', sans-serif;
+  text-decoration: none;
+  color: #374341;
+  text-shadow: 0 1px 1px #374341;
+  margin: 0.5em 0.5em;
+}
 
 .projectname {
-  margin: 0 0.5em 0 0;
+  margin: 0;
   padding: 0;
 }
 
-.excerpt {
-  margin-bottom: 1em;
+.projectname h2 {
   font-family: 'Source Sans Pro', sans-serif;
+  margin-bottom: 0.25em;
+}
+
+.excerpt {
+  margin-bottom: 0;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+.mockupAndLinks {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .mockupContainer {
   position: relative;
-  margin: 0 1em;
+  margin: 0 1em 1em 1em;
 }
 
 .mockupContainer:hover .mockupOverlay {
@@ -197,7 +196,6 @@ hr {
 .techStack {
   text-align: center;
   padding: 0 0 0.5em 0;
-  /* new: */
   position: absolute;
   align-self: center;
   justify-content: center;
@@ -208,35 +206,4 @@ hr {
   max-width: 100%;
   vertical-align: middle;
   margin: 0.75em 0.75em;
-}
-
-.buttons {
-  display: flex;
-  justify-content: center;
-}
-
-.buttons a {
-  margin: 0 1em;
-  border-radius: 15px;
-}
-
-.buttons button {
-  background-color: #cc6666;
-  padding: 0.1em 0.75em;
-  border-radius: 15px;
-  color: white;
-  text-decoration: none;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin: 4px 2px;
-  -webkit-transition-duration: 0.5s; /* Safari */
-  transition-duration: 0.5s;
-  cursor: pointer;
-}
-
-.buttons button:hover {
-  background-color: #cc9999;
-  color: white; /* Text color */
 }

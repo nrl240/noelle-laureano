@@ -7,41 +7,54 @@ import mapStackMockup from '../images/mapstackmockup.png'
 import saucesomeMockup from '../images/saucesomemockup.png'
 import theListeningRoomMockup from '../images/theListeningRoomMockup.png'
 
-import { reactImg, bootstrapImg, firebaseImg, googlemapsImg, herokuImg, nodeImg, postgresqlImg } from '../images/tech'
+import {
+  reactImg,
+  bootstrapImg,
+  firebaseImg,
+  googlemapsImg,
+  herokuImg,
+  nodeImg,
+  postgresqlImg,
+} from '../images/tech'
 
 const Project = props => {
-
   const techImgs = props.techImgs
 
   return (
-  <div className={styles.project}>
-    <div className={styles.description}>
-      <div className={styles.nameAndLinks}>
-        <h2 className={styles.projectname}>{props.projectname}</h2>
-        <a href={props.siteUrl} target="_blank">
-          Visit
-        </a>
-        <a href={props.githubUrl} target="_blank">
-          GitHub
-        </a>
-      </div>
-      <p className={styles.excerpt}>{props.excerpt}</p>
-    </div>
-    <div className={styles.mockupContainer}>
-      <img src={props.mockup} className={styles.mockup} alt="" />
-      <div className={styles.mockupOverlay}>
-        <div className={styles.techStack} >
-          { techImgs
-            ? techImgs.map(image =>
-              <img src={image} alt="" />
-            )
-            : 'Tech stack loading...'
-          }
+    <div className={styles.project}>
+      <div className={styles.description}>
+        <div className={styles.projectname}>
+          <h2>{props.projectname}</h2>
+        </div>
+        <div>
+          <p className={styles.excerpt}>
+            {props.excerpt}
+          </p>
         </div>
       </div>
+      <div className={styles.mockupAndLinks}>
+        <div className={styles.mockupContainer}>
+          <img src={props.mockup} className={styles.mockup} alt="" />
+          <div className={styles.mockupOverlay}>
+            <div className={styles.techStack}>
+              {techImgs
+                ? techImgs.map(image => <img src={image} alt="" />)
+                : 'Tech stack loading...'}
+            </div>
+          </div>
+        </div>
+        <div className={styles.linksContainer}>
+          <a href={props.siteUrl} target="_blank">
+            Visit
+          </a>
+          <a href={props.githubUrl} target="_blank">
+            GitHub
+          </a>
+      </div>
+      </div>
     </div>
-  </div>
-)}
+  )
+}
 
 export default () => (
   <div className={styles.projectsSection}>
@@ -55,7 +68,7 @@ export default () => (
         githubUrl="https://github.com/FSACapstone/MapIt"
         techImgs={[reactImg, firebaseImg, nodeImg, googlemapsImg]}
       />
-      <hr />
+      <hr className={styles.projectHR} />
       <Project
         projectname="Saucesome"
         mockup={saucesomeMockup}
@@ -64,7 +77,7 @@ export default () => (
         githubUrl="https://github.com/saucesome-gs/saucesome"
         techImgs={[reactImg, nodeImg, postgresqlImg, bootstrapImg, herokuImg]}
       />
-      <hr />
+      <hr className={styles.projectHR} />
       <Project
         projectname="The Listening Room"
         mockup={theListeningRoomMockup}
@@ -76,7 +89,6 @@ export default () => (
     </div>
   </div>
 )
-
 
 // Removed website and GitHub buttons:
 // <div className={styles.buttons}>
