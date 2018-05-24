@@ -1,8 +1,36 @@
 import React from 'react'
 import Link from 'gatsby-link'
-import styles from './header.module.css'
-
+import styles from './Header.module.css'
 import noelle from '../images/noelle.jpg'
+
+let marginY = 0
+let destination = 0
+let speed = 15
+let scroller = null
+
+const initScroll = (elementId) => {
+  destination = document.getElementById(elementId).offsetTop
+  scroller = setTimeout(() => {
+    initScroll(elementId)
+  }, 1)
+  marginY += speed
+  if (marginY >= destination) {
+    clearTimeout(scroller)
+  }
+  window.scroll(0, marginY)
+}
+
+const toTop = () => {
+  destination = document.getElementById(elementId).offsetTop
+  scroller = setTimeout(() => {
+    initScroll(elementId)
+  }, 1)
+  marginY -= speed
+  if (marginY <= 0) {
+    clearTimeout(scroller)
+  }
+  window.scroll(0, marginY)
+}
 
 const Header = () => (
   <header className={styles.header}>
@@ -19,12 +47,18 @@ const Header = () => (
           <div className={styles.navWrapper}>
             <ul>
               <li>
-                <a href="#projects">
+                <a
+                  onClick={() => initScroll('projects')}
+                  href="#projects"
+                >
                   <span>PROJECTS</span>
                 </a>
               </li>
               <li>
-                <a href="#resume">
+                <a
+                  onClick={() => initScroll('resume')}
+                  href="#resume"
+                >
                   <span>RÉSUMÉ</span>
                 </a>
               </li>

@@ -1,11 +1,12 @@
 import React from 'react'
 import Link from 'gatsby-link'
-import styles from './projects.module.css'
+import styles from './Projects.module.css'
 import Container from '../components/container'
 
 import mapStackMockup from '../images/mapstackmockup.png'
 import saucesomeMockup from '../images/saucesomemockup.png'
 import theListeningRoomMockup from '../images/theListeningRoomMockup.png'
+import chevron from '../images/chevron.png'
 
 import {
   reactImg,
@@ -17,6 +18,23 @@ import {
   postgresqlImg,
 } from '../images/tech'
 
+let marginY = 0
+let destination = 0
+let speed = 20
+let scroller = null
+
+const toTop = elementId => {
+  destination = document.getElementById(elementId).offsetTop
+  scroller = setTimeout(() => {
+    initScroll(elementId)
+  }, 1)
+  marginY -= speed
+  if (marginY <= 0) {
+    clearTimeout(scroller)
+  }
+  window.scroll(0, marginY)
+}
+
 const Project = props => {
   const techImgs = props.techImgs
 
@@ -27,9 +45,7 @@ const Project = props => {
           <h2>{props.projectname}</h2>
         </div>
         <div>
-          <p className={styles.excerpt}>
-            {props.excerpt}
-          </p>
+          <p className={styles.excerpt}>{props.excerpt}</p>
         </div>
       </div>
       <div className={styles.mockupAndLinks}>
@@ -50,15 +66,20 @@ const Project = props => {
           <a href={props.githubUrl} target="_blank">
             GitHub
           </a>
-      </div>
+        </div>
       </div>
     </div>
   )
 }
 
 export default () => (
-  <div className={styles.projectsSection}>
-    <h1>Projects</h1>
+  <div id="projects" className={styles.projectsSection}>
+    <div className={styles.projectsBar}>
+      <h1>Projects</h1>
+      <a onClick={() => toTop('top')} href="#">
+        <img src={chevron} />
+      </a>
+    </div>
     <div className={styles.projectsContainer}>
       <Project
         projectname="MapStack"

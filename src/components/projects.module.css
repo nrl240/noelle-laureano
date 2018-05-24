@@ -3,12 +3,42 @@
   flex-wrap: wrap;
 }
 
-.projectsSection h1 {
+.projectsBar {
+  display: flex;
+  justify-content: space-between;
+  background: #f7484e;
+  color: #fff;
+  align-items: center;
+}
+
+.projectsBar h1 {
   font-family: 'Poiret One', cursive;
   padding: 0.5em 0.75em;
   margin: 0;
   background: #f7484e;
-  color: #fff;
+}
+
+.projectsBar img {
+  height: 3.5em;
+  padding: 0.5em 0.75em;
+  margin: 0;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.projectsBar img:hover {
+  height: 3.5em;
+  padding: 0.5em 0.75em;
+  margin: 0;
+  border-radius: 50%;
+  -webkit-transform: rotate(360deg);
+  -moz-transform: rotate(360deg);
+  -o-transform: rotate(360deg);
+  -ms-transform: rotate(360deg);
+  transform: rotate(360deg);
 }
 
 .projectHR {
@@ -17,7 +47,7 @@
   height: 1px;
   background: #333;
   background-image: linear-gradient(to right, #ccc, #333, #ccc);
-  margin:1em 15%;
+  margin: 1em 15%;
 }
 
 .project {
@@ -57,78 +87,78 @@
 /* Visit and GitHub link effects */
 .linksContainer a {
   position: relative;
-	display: inline-block;
-	outline: none;
+  display: inline-block;
+  outline: none;
   font-family: 'Source Sans Pro', sans-serif;
-	font-weight: 400;
-	letter-spacing: 1px;
+  font-weight: 400;
+  letter-spacing: 1px;
   color: #374341;
   text-shadow: #374341;
   text-decoration: none;
-	text-transform: uppercase;
+  text-transform: uppercase;
   margin: 0.5em 0.5em;
   padding: 0 10px;
-	height: 45px;
-	line-height: 45px;
+  height: 45px;
+  line-height: 45px;
 }
 
 .linksContainer a::before,
 .linksContainer a::after {
-	position: absolute;
-	width: 45px;
-	height: 1.5px;
-	background: #374341;
-	content: '';
-	opacity: 0.2;
-	-webkit-transition: all 0.3s;
-	-moz-transition: all 0.3s;
-	transition: all 0.3s;
-	pointer-events: none;
+  position: absolute;
+  width: 45px;
+  height: 1.5px;
+  background: #374341;
+  content: '';
+  opacity: 0.2;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  transition: all 0.3s;
+  pointer-events: none;
 }
 
 .linksContainer a::before {
-	top: 0;
-	left: 0;
-	-webkit-transform: rotate(90deg);
-	-moz-transform: rotate(90deg);
-	transform: rotate(90deg);
-	-webkit-transform-origin: 0 0;
-	-moz-transform-origin: 0 0;
-	transform-origin: 0 0;
+  top: 0;
+  left: 0;
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  transform: rotate(90deg);
+  -webkit-transform-origin: 0 0;
+  -moz-transform-origin: 0 0;
+  transform-origin: 0 0;
 }
 
 .linksContainer a::after {
-	right: 0;
-	bottom: 0;
-	-webkit-transform: rotate(90deg);
-	-moz-transform: rotate(90deg);
-	transform: rotate(90deg);
-	-webkit-transform-origin: 100% 0;
-	-moz-transform-origin: 100% 0;
-	transform-origin: 100% 0;
+  right: 0;
+  bottom: 0;
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  transform: rotate(90deg);
+  -webkit-transform-origin: 100% 0;
+  -moz-transform-origin: 100% 0;
+  transform-origin: 100% 0;
 }
 
 .linksContainer a:hover::before,
 .linksContainer a:hover::after,
 .linksContainer a:focus::before,
 .linksContainer a:focus::after {
-	opacity: 1;
+  opacity: 1;
 }
 
 .linksContainer a:hover::before,
 .linksContainer a:focus::before {
-	left: 50%;
-	-webkit-transform: rotate(0deg) translateX(-50%);
-	-moz-transform: rotate(0deg) translateX(-50%);
-	transform: rotate(0deg) translateX(-50%);
+  left: 50%;
+  -webkit-transform: rotate(0deg) translateX(-50%);
+  -moz-transform: rotate(0deg) translateX(-50%);
+  transform: rotate(0deg) translateX(-50%);
 }
 
 .linksContainer a:hover::after,
 .linksContainer a:focus::after {
-	right: 50%;
-	-webkit-transform: rotate(0deg) translateX(50%);
-	-moz-transform: rotate(0deg) translateX(50%);
-	transform: rotate(0deg) translateX(50%);
+  right: 50%;
+  -webkit-transform: rotate(0deg) translateX(50%);
+  -moz-transform: rotate(0deg) translateX(50%);
+  transform: rotate(0deg) translateX(50%);
 }
 
 .nameAndLinks p {
