@@ -15,7 +15,6 @@
 
 .aboutPhoto img {
   margin: 0;
-  max-width: 18em;
   /* flex-shrink: 0; */
   /* min-width: 100%; */
   /* min-height: 100%; */

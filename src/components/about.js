@@ -11,12 +11,11 @@ const About = () => (
     </div>
     <div className={styles.aboutText}>
       <h2>
-        HELLO! HEJ!
+        HELLO!
       </h2>
       <h4>
         I'm Noelle Laureano.<br></br>
-        Born, bred and based in New York,
-        I live for quality and efficiency.<br></br>
+        ....ENTER ABOUT ME....<br></br>
       </h4>
     </div>
   </div>
