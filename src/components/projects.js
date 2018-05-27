@@ -3,10 +3,9 @@ import Link from 'gatsby-link'
 import styles from './Projects.module.css'
 import Container from '../components/container'
 
-import mapStackMockup from '../images/mapstackmockup.png'
-import saucesomeMockup from '../images/saucesomemockup.png'
-import theListeningRoomMockup from '../images/theListeningRoomMockup.png'
-import chevron from '../images/chevron.png'
+import { mapStackMockup, saucesomeMockup, theListeningRoomMockup } from '../images/projects'
+
+import { chevronBlack } from '../images'
 
 import {
   reactImg,
@@ -77,7 +76,7 @@ export default () => (
     <div className={styles.projectsBar}>
       <h1>Projects</h1>
       <a onClick={() => toTop('top')} href="#">
-        <img src={chevron} />
+        <img src={chevronBlack} />
       </a>
     </div>
     <div className={styles.projectsContainer}>

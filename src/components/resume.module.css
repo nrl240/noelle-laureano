@@ -1,25 +1,74 @@
 @import url('//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css');
 
+.resumeSection {
+  background: rgba(231, 56, 39, 1);
+  background: -moz-linear-gradient(
+    -45deg,
+    rgba(231, 56, 39, 1) 0%,
+    rgba(231, 56, 39, 1) 28%,
+    rgba(247, 72, 78, 1) 86%,
+    rgba(247, 72, 78, 1) 100%
+  );
+  background: -webkit-gradient(
+    left top,
+    right bottom,
+    color-stop(0%, rgba(231, 56, 39, 1)),
+    color-stop(28%, rgba(231, 56, 39, 1)),
+    color-stop(86%, rgba(247, 72, 78, 1)),
+    color-stop(100%, rgba(247, 72, 78, 1))
+  );
+  background: -webkit-linear-gradient(
+    -45deg,
+    rgba(231, 56, 39, 1) 0%,
+    rgba(231, 56, 39, 1) 28%,
+    rgba(247, 72, 78, 1) 86%,
+    rgba(247, 72, 78, 1) 100%
+  );
+  background: -o-linear-gradient(
+    -45deg,
+    rgba(231, 56, 39, 1) 0%,
+    rgba(231, 56, 39, 1) 28%,
+    rgba(247, 72, 78, 1) 86%,
+    rgba(247, 72, 78, 1) 100%
+  );
+  background: -ms-linear-gradient(
+    -45deg,
+    rgba(231, 56, 39, 1) 0%,
+    rgba(231, 56, 39, 1) 28%,
+    rgba(247, 72, 78, 1) 86%,
+    rgba(247, 72, 78, 1) 100%
+  );
+  background: linear-gradient(
+    135deg,
+    rgba(231, 56, 39, 1) 0%,
+    rgba(231, 56, 39, 1) 28%,
+    rgba(247, 72, 78, 1) 86%,
+    rgba(247, 72, 78, 1) 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e73827', endColorstr='#f7484e', GradientType=1 );
+}
+
 .resumeBar {
   display: flex;
   justify-content: space-between;
-  background: #f7484e;
   color: #fff;
   align-items: center;
+  /* background: #f7484e; */
 }
 
 .resumeBar h1 {
   font-family: 'Poiret One', cursive;
+  font-size: 3em;
   padding: 0.5em 0.75em;
   margin: 0;
-  background: #f7484e;
+  /* background: #f7484e; */
 }
 
 .resumeBar img {
-  height: 3.5em;
-  padding: 0.5em 0.75em;
+  height: 3em;
+  padding: 0.5em 2.25em;
   margin: 0;
-  transition: all .2s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 
 .resumeBar img:hover {
@@ -30,7 +79,8 @@
   overflow: hidden;
   margin: 0 auto;
   padding: 2em 0;
-  background: rgba(41, 41, 41, 1);
+
+  /* background: rgba(41, 41, 41, 1);
   background: -moz-linear-gradient(
     -45deg,
     rgba(41, 41, 41, 1) 0%,
@@ -62,7 +112,7 @@
     rgba(41, 41, 41, 1) 0%,
     rgba(76, 76, 76, 1) 100%
   );
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#292929', endColorstr='#4c4c4c', GradientType=1 );
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#292929', endColorstr='#4c4c4c', GradientType=1 ); */
 }
 
 .cdTimelineContainer {
@@ -124,9 +174,9 @@
   margin: -12px 0 0 -12px;
 }
 
-img {
+/* img {
   max-width: 100%;
-}
+} */
 
 .cdTimelineContent {
   position: relative;
@@ -169,22 +219,22 @@ img {
 .jobTopContainer {
   display: flex;
   justify-content: space-between;
-  margin-bottom: .5em;
+  margin-bottom: 0.5em;
 }
 
 .jobTopContainer img {
-  max-height: 20px;
-  max-width: 80px;
+  max-height: 25px;
+  max-width: 100px;
   margin: 0;
 }
 
 .cdTimelineReadMore {
   font-family: 'Source Sans Pro', sans-serif;
   font-size: 12px;
-  padding: .5em .75em;
+  padding: 0.5em 0.75em;
   background: #acb7c0;
   color: #fff;
-  border-radius: .25em;
+  border-radius: 0.25em;
 }
 
 .cdTimelineReadMore,
@@ -206,7 +256,6 @@ a {
 
 /* STRECHED SCREEN */
 @media only screen and (min-width: 850px) {
-
   .cdTimelineContainer::before {
     /* this is the vertical line */
     left: 50%;
@@ -299,11 +348,9 @@ a {
   }
 }
 
-
-
 /* NEW */
 
-.wrapCollabsible input[type=checkbox]:checked + label {
+.wrapCollabsible input[type='checkbox']:checked + label {
   left: 27px;
 }
 
@@ -325,11 +372,11 @@ a {
   vertical-align: middle;
   margin-right: .7rem;
   transform: translateY(-2px); */
-  transition: transform .2s ease-out;
+  transition: transform 0.2s ease-out;
 }
 
 .lblToggle:hover {
-  color: cornflowerblue;
+  color: darkred;
 }
 
 /* Input Tag Toggle*/
@@ -351,14 +398,13 @@ a {
   border-bottom-left-radius: 0;
 }
 
-
 /* Collapsible Content &
    Inner Content */
 
 .collapsibleContent {
   max-height: 0px;
   overflow: hidden;
-  transition: max-height .25s ease-in-out;
+  transition: max-height 0.25s ease-in-out;
   border-bottom-right-radius: 7px;
 }
 
@@ -370,14 +416,14 @@ a {
 
 .contentInner ul {
   list-style-type: none;
-  margin-left: .25em;
+  margin-left: 0.25em;
   padding-left: 20px;
 }
 
 .contentInner li {
   position: relative;
-  padding-left: .5em;
-  margin: 0 0 .75em 0;
+  padding-left: 0.5em;
+  margin: 0 0 0.75em 0;
 }
 
 .contentInner li:before {
@@ -385,10 +431,9 @@ a {
   top: 0;
   left: -1.5em;
   font-family: FontAwesome;
-  content: "\f058";
+  content: '\f058';
 }
 
 .toggle:checked + .lblToggle + .collapsibleContent {
   max-height: 1000px;
 }
-

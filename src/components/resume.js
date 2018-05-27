@@ -5,7 +5,9 @@ import styles from './Resume.module.css'
 import Container from '../components/container'
 
 import { fsaImg, mizuhoImg, lordabbettImg, browserImg, bankImg, fundImg } from '../images/resume'
-import chevron from '../images/chevron.png'
+
+import { chevronWhite } from '../images'
+
 import {
   excelImg,
   sqlserverImg,
@@ -80,7 +82,7 @@ export default () => (
     <div className={styles.resumeBar}>
       <h1>Résumé</h1>
       <a onClick={() => toTop('top')} href="#">
-        <img src={chevron} />
+        <img src={chevronWhite} />
       </a>
     </div>
     <section className={`${styles.cdTimeline} jsCdTimeline`}>

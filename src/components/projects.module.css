@@ -1,29 +1,28 @@
 .projectsContainer {
   display: flex;
   flex-wrap: wrap;
-  margin: 2em 0;
+  margin: 0 0 2em 0;
 }
 
 .projectsBar {
   display: flex;
   justify-content: space-between;
-  background: #f7484e;
-  color: #fff;
+  /* background: #f7484e; */
   align-items: center;
 }
 
 .projectsBar h1 {
   font-family: 'Poiret One', cursive;
+  font-size: 3em;
   padding: 0.5em 0.75em;
   margin: 0;
-  background: #f7484e;
 }
 
 .projectsBar img {
-  height: 3.5em;
-  padding: 0.5em 0.75em;
+  height: 3em;
+  padding: 0.5em 2.25em;
   margin: 0;
-  transition: all .2s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 
 .projectsBar img:hover {

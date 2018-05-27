@@ -1,2 +1,2 @@
-export { default as chevronImg } from './chevron.png'
-
+export { default as chevronWhite } from './chevronWhite.png'
+export { default as chevronBlack } from './chevronBlack.png'
