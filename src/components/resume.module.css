@@ -48,12 +48,13 @@
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e73827', endColorstr='#f7484e', GradientType=1 );
 }
 
+/* Section Header */
+
 .resumeBar {
   display: flex;
   justify-content: space-between;
   color: #fff;
   align-items: center;
-  /* background: #f7484e; */
 }
 
 .resumeBar h1 {
@@ -61,7 +62,6 @@
   font-size: 3em;
   padding: 0.5em 0.75em;
   margin: 0;
-  /* background: #f7484e; */
 }
 
 .resumeBar img {
@@ -75,44 +75,22 @@
   transform: scale(1.1);
 }
 
+/* Tap for details  */
+
+.tapForDetails {
+  font-family: 'Raleway Dots', cursive;
+  color: #fff;
+  text-align: center;
+  padding: 1em 0 0 0;
+}
+
+
+/* Timeline */
+
 .cdTimeline {
   overflow: hidden;
   margin: 0 auto;
-  padding: 2em 0;
-
-  /* background: rgba(41, 41, 41, 1);
-  background: -moz-linear-gradient(
-    -45deg,
-    rgba(41, 41, 41, 1) 0%,
-    rgba(76, 76, 76, 1) 100%
-  );
-  background: -webkit-gradient(
-    left top,
-    right bottom,
-    color-stop(0%, rgba(41, 41, 41, 1)),
-    color-stop(100%, rgba(76, 76, 76, 1))
-  );
-  background: -webkit-linear-gradient(
-    -45deg,
-    rgba(41, 41, 41, 1) 0%,
-    rgba(76, 76, 76, 1) 100%
-  );
-  background: -o-linear-gradient(
-    -45deg,
-    rgba(41, 41, 41, 1) 0%,
-    rgba(76, 76, 76, 1) 100%
-  );
-  background: -ms-linear-gradient(
-    -45deg,
-    rgba(41, 41, 41, 1) 0%,
-    rgba(76, 76, 76, 1) 100%
-  );
-  background: linear-gradient(
-    135deg,
-    rgba(41, 41, 41, 1) 0%,
-    rgba(76, 76, 76, 1) 100%
-  );
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#292929', endColorstr='#4c4c4c', GradientType=1 ); */
+  padding: 0 0 2em 0;
 }
 
 .cdTimelineContainer {
@@ -134,6 +112,8 @@
   width: 4px;
   background: #d7e4ed;
 }
+
+/* Business Cards */
 
 .cdTimelineBlock:first-child {
   margin-top: 0;
@@ -167,16 +147,11 @@
 
 .cdTimelineImg img {
   display: block;
-  /* width: 50px; */
   position: relative;
   left: 30%;
   top: 30%;
   margin: -12px 0 0 -12px;
 }
-
-/* img {
-  max-width: 100%;
-} */
 
 .cdTimelineContent {
   position: relative;
@@ -185,7 +160,12 @@
   background: #fff;
   border-radius: 0.25em;
   box-shadow: 0 3px 0 #d7e4ed;
+  /* transition: all 0.2s ease-in-out; */
 }
+
+/* .cdTimelineContent:hover {
+  transform: scale(1.02);
+} */
 
 .cdTimelineContent h4,
 .cdTimelineContent h5 {
@@ -243,8 +223,9 @@
 }
 
 .cdTimelineDate {
-  font-family: 'Source Sans Pro', sans-serif;
-  font-size: 11px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+  font-size: 12px;
   float: right;
   padding: 0.4em 0 0.5em;
   opacity: 0.7;
@@ -254,12 +235,17 @@ a {
   text-decoration: none;
 }
 
-/* STRECHED SCREEN */
+/* For wider screens */
+
 @media only screen and (min-width: 850px) {
   .cdTimelineContainer::before {
     /* this is the vertical line */
     left: 50%;
-    margin-left: -2px;
+    margin-left: 1px;
+  }
+
+  .tapForDetails {
+    padding: 1em 0 2em;
   }
 
   .cdTimelineBlock {
@@ -295,7 +281,7 @@ a {
   }
 
   .cdTimelineBlock:nth-child(even) .cdTimelineContent::before {
-    top: 24px;
+    top: 15px;
     left: auto;
     right: 100%;
     border-color: transparent;
@@ -309,10 +295,11 @@ a {
     left: auto;
     right: 122%;
     text-align: right;
+    color: #fff;
   }
 
   .cdTimelineContent::before {
-    top: 24px;
+    top: 15px;
     left: 100%;
     border-color: transparent;
     border-left-color: #fff;
@@ -323,7 +310,9 @@ a {
   }
 
   .cdTimelineDate {
-    font-size: 14px;
+    font-family: 'Raleway Dots', cursive;
+    font-weight: bold;
+    font-size: 16px;
     position: absolute;
     width: 100%;
     left: 122%;
@@ -348,15 +337,13 @@ a {
   }
 }
 
-/* NEW */
-
 .wrapCollabsible input[type='checkbox']:checked + label {
   left: 27px;
 }
 
 /* Label Content */
+
 .lblToggle {
-  /* display: block; */
   padding: 0.75em 1em 0;
   margin-top: 0.5em;
   cursor: pointer;
@@ -365,29 +352,18 @@ a {
 
 .lblToggle::after {
   content: ' ';
-  /* display: inline-block;
-  border-top: 5px solid transparent;
-  border-bottom: 5px solid transparent;
-  border-left: 5px solid currentColor;
-  vertical-align: middle;
-  margin-right: .7rem;
-  transform: translateY(-2px); */
   transition: transform 0.2s ease-out;
 }
 
-.lblToggle:hover {
-  color: darkred;
-}
+/* .lblToggle:hover {
+
+} */
 
 /* Input Tag Toggle*/
 
 .toggle {
   display: none;
 }
-
-/* .toggle:checked + .lblToggle::after {
-  transform: rotate(90deg) translateX(-3px);
-} */
 
 .toggle:checked + .lblToggle + .collapsibleContent {
   max-height: 1000px;
@@ -398,8 +374,7 @@ a {
   border-bottom-left-radius: 0;
 }
 
-/* Collapsible Content &
-   Inner Content */
+/* Collapsible Content & Inner Content */
 
 .collapsibleContent {
   max-height: 0px;

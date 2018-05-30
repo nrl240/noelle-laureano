@@ -1,0 +1,14 @@
+.frame {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1em;
+}
+
+.frame h2 {
+  background: #272727;
+  color: #fff;
+  font-family: 'Poiret One',cursive;
+  margin: 0;
+  padding: 1em 0 .75em;
+  text-align: center;
+}

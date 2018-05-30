@@ -7,7 +7,6 @@
 .projectsBar {
   display: flex;
   justify-content: space-between;
-  /* background: #f7484e; */
   align-items: center;
 }
 

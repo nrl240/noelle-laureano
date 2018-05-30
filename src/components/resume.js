@@ -36,7 +36,6 @@ const toTop = elementId => {
 
 const ResumeItem = props =>
 {
-  console.log(props.sideHack)
   return (
     <div className={`${styles.cdTimelineBlock} jsCdBlock`}>
       <div
@@ -80,12 +79,15 @@ const ResumeItem = props =>
 export default () => (
   <div id="resume" className={styles.resumeSection}>
     <div className={styles.resumeBar}>
-      <h1>Résumé</h1>
+      <h1>Experience</h1>
       <a onClick={() => toTop('top')} href="#">
         <img src={chevronWhite} />
       </a>
     </div>
     <section className={`${styles.cdTimeline} jsCdTimeline`}>
+      <div className={styles.tapForDetails}>
+        <span>tap card for details</span>
+      </div>
       <div className={styles.cdTimelineContainer}>
         <ResumeItem
           id="FullstackTF"
@@ -93,7 +95,7 @@ export default () => (
           jobTitle="Software Engineering Teaching Fellow"
           department="NYC Web Development Fellowship"
           group="Software Engineering Immersive"
-          dates="Apr 2018 - Present  (1.5 mos)"
+          dates="Apr 2018 - Present"
           descriptions={[
             'Mentored 35 students on development concepts, algorithms, debugging strategies, software architecture and clean code structure',
             'Conducted technical interviews for applicants',
@@ -111,7 +113,7 @@ export default () => (
           jobTitle="Risk Management Officer"
           department="Risk Management Department"
           group="Portfolio Analytics & Modeling"
-          dates="Apr 2017 - Jan 2018  (10 mos)"
+          dates="Apr 2017 - Jan 2018"
           descriptions={[
             'Built and maintained an automated, comprehensive daily risk management dashboard for C-Suite executives that utilizes and manipulates data fed from several files, Bloomberg API, and Microsoft SQL database tables',
             'Authored monthly cross-asset market and macroeconomic recaps for senior management risk committee meetings',
@@ -128,7 +130,7 @@ export default () => (
           jobTitle="Portfolio Management Officer"
           department="Portfolio Management Department"
           group="Strategic Credit Hedge"
-          dates="Sep 2015 - Mar 2017  (1 yr 7 mos)"
+          dates="Sep 2015 - Mar 2017"
           descriptions={[
             'Developed and automated portfolio analytics for the group’s $55.6 billion loan portfolio in order to determine potential trade ideas based on single-name CDS relative value',
             'Built an archive and tracking tool to review trade performance using Bloomberg API and VBA',
@@ -149,7 +151,7 @@ export default () => (
           jobTitle="Associate Trader"
           department="Fixed Income Mutual Funds"
           group="Municipal Bonds"
-          dates="Oct 2013 - Sep 2015  (2 yrs)"
+          dates="Oct 2013 - Sep 2015"
           descriptions={[
             'Developed and maintain a database of obligors by security in order to analyze differences in market value weighting and duration contribution between each fund and its internal benchmark',
             'Maintained a database of new issue pricing scales to determine the maximum returning maturity, and evaluate spreads versus other new issue deals and existing markets in the secondary',
@@ -167,7 +169,7 @@ export default () => (
           jobTitle="Portfolio Analyst"
           department="Fixed Income Mutual Funds"
           group="Municipal Bonds"
-          dates="Jun 2011 - Sep 2013  (2 yrs 5 mos)"
+          dates="Jun 2011 - Sep 2013"
           descriptions={[
             'Constructed a database using VBA and Barclays POINT to present and maintain weekly year-to-date total return changes within the Barclays Aggregate and High Yield indices using several partitions',
             'Collaborated with the technology team to create a heat map that highlights fund versus internal index differences in yield curve, quality, time to next call, price, sector, and state positioning',

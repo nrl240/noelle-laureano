@@ -59,7 +59,7 @@ const Header = () => (
                   onClick={() => initScroll('resume')}
                   href="#resume"
                 >
-                  <span>RÉSUMÉ</span>
+                  <span>EXPERIENCE</span>
                 </a>
               </li>
               <li>

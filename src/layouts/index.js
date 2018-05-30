@@ -2,7 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
 
-import { Header, About, Projects, Resume } from '../components'
+import { Header, About, Projects, Resume, Frame } from '../components'
 
 import './index.css'
 
@@ -19,6 +19,7 @@ const Layout = ({ children, data }) => (
     <About />
     <Projects />
     <Resume />
+    <Frame />
     <div
       style={{
         margin: '0 auto',
@@ -27,7 +28,7 @@ const Layout = ({ children, data }) => (
         paddingTop: 0,
       }}
     >
-      {children()}
+      {/*{children()}*/}
     </div>
   </div>
 )
