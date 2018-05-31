@@ -2,11 +2,11 @@ import React from 'react'
 import Link from 'gatsby-link'
 
 import styles from './Resume.module.css'
-import Container from '../components/container'
+import Container from './'
 
-import { fsaImg, mizuhoImg, lordabbettImg, browserImg, bankImg, fundImg } from '../images/resume'
+import { fsaImg, mizuhoImg, lordabbettImg, browserImg, bankImg, fundImg } from '../../images/resume'
 
-import { chevronWhite } from '../images'
+import { chevronWhite } from '../../images'
 
 import {
   excelImg,
@@ -15,7 +15,7 @@ import {
   bbgImg,
   apiImg,
   murexImg,
-} from '../images/tech'
+} from '../../images/tech'
 
 let marginY = 0
 let destination = 0

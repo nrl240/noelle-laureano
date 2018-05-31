@@ -4,8 +4,8 @@ import styles from './About.module.css'
 
 import { Container } from './'
 
-import { chevronBlack, noelle } from '../images'
-import { singer, realmadrid, plane, spain, denmark } from '../images/extra'
+import { chevronBlack, noelle } from '../../images'
+import { singer, realmadrid, plane, spain, denmark } from '../../images/extra'
 
 const About = () => (
   <div className={styles.about}>
@@ -54,22 +54,3 @@ const About = () => (
 )
 
 export default About
-
-// <div className={styles.aboutText}>
-// <h2>HELLO!</h2>
-// <h4>
-//   I'm Noelle Laureano.<br />
-//   ....ENTER ABOUT ME....<br />
-// </h4>
-// </div>
-
-// <p>
-// With several years of developing and automating dashboards in the finance industry under my belt, I am keen on proper database design.
-// </p>
-
-// With seven years of experience
-// in finance, building and automating
-// solutions for trading and risk
-// management desks, I now specialize
-// in full-stack web
-// development.<br></br>

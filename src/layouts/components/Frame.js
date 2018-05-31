@@ -1,9 +1,9 @@
 import React from 'react'
 import Link from 'gatsby-link'
 import styles from './Frame.module.css'
-import Container from '../components/container'
+import Container from './'
 
-import { chevronBlack } from '../images'
+import { chevronBlack } from '../../images'
 
 let marginY = 0
 let destination = 0
@@ -38,5 +38,3 @@ const Frame = () => (
 // allow="encrypted-media"
 
 export default Frame
-
-// src="https://open.spotify.com/embed/user/nrlaureano/playlist/4ZftPeokLbR8PHVfyFiyBV"
