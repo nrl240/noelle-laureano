@@ -3,9 +3,9 @@ import Link from 'gatsby-link'
 import styles from './Projects.module.css'
 import Container from '../components/container'
 
-import { mapStackMockup, saucesomeMockup, theListeningRoomMockup } from '../../images/projects'
+import { mapStackMockup, saucesomeMockup, theListeningRoomMockup } from '../images/projects'
 
-import { chevronBlack } from '../../images'
+import { chevronBlack } from '../images'
 
 import {
   reactImg,
@@ -15,7 +15,7 @@ import {
   herokuImg,
   nodeImg,
   postgresqlImg,
-} from '../../images/tech'
+} from '../images/tech'
 
 let marginY = 0
 let destination = 0

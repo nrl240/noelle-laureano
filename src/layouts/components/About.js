@@ -4,8 +4,8 @@ import styles from './About.module.css'
 
 import { Container } from './'
 
-import { chevronBlack, noelle } from '../../images'
-import { singer, realmadrid, plane, spain, denmark } from '../../images/extra'
+import { chevronBlack, noelle } from '../images'
+import { singer, realmadrid, plane, spain, denmark } from '../images/extra'
 
 const About = () => (
   <div className={styles.about}>

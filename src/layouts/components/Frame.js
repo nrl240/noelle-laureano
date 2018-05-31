@@ -3,7 +3,7 @@ import Link from 'gatsby-link'
 import styles from './Frame.module.css'
 import Container from './'
 
-import { chevronBlack } from '../../images'
+import { chevronBlack } from '../images'
 
 let marginY = 0
 let destination = 0
