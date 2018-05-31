@@ -27,14 +27,14 @@ const Frame = () => (
     <h2>Listen conmigo</h2>
     <iframe
       src="https://open.spotify.com/embed/user/nrlaureano/playlist/3q1O39ufBx8G9vhdrv2VpW"
-      width="100%"
-      height="500"
-      frameBorder="0"
-      allowTransparency="true"
     />
   </div>
 )
 
+// width="100%"
+// height="500"
+// frameBorder="0"
+// allowTransparency="true"
 // allow="encrypted-media"
 
 export default Frame

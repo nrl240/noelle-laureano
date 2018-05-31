@@ -2,7 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
 
-import { Header, About, Projects, Resume, Frame } from './components'
+import { Header, About, Projects, Resume, Frame, Footer } from './components'
 
 import './index.css'
 
@@ -11,8 +11,8 @@ const Layout = ({ children, data }) => (
     <Helmet
       title="Noelle Laureano"
       meta={[
-        { name: 'description', content: 'Sample' },
-        { name: 'keywords', content: 'sample, something' },
+        { name: 'description', content: 'Check me out' },
+        { name: 'keywords', content: 'noelle laureano' },
       ]}
     />
     <Header />
@@ -20,6 +20,7 @@ const Layout = ({ children, data }) => (
     <Projects />
     <Resume />
     <Frame />
+    <Footer />
     <div
       style={{
         margin: '0 auto',

@@ -63,7 +63,7 @@ const Header = () => (
                 </a>
               </li>
               <li>
-                <a href="/contact">
+                <a href="mailto:nrlaureano@gmail.com?subject=HELLO!">
                   <span>CONTACT</span>
                 </a>
               </li>
