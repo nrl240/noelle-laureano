@@ -1,6 +1,12 @@
-.header {
-  padding: 0 1em;
-  z-index: 8001;
+/* When I'm not coding...  */
+
+.aboutExtra {
+  padding: 1em 3em;
+}
+
+.aboutExtra {
+  text-align: center;
+  color: #fff;
 
   background: rgba(231, 56, 39, 1);
   background: -moz-linear-gradient(
@@ -49,70 +55,37 @@
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e73827', endColorstr='#f7484e', GradientType=1 );
 }
 
-@media only screen and (min-width: 700px) {
-  .header {
-    padding: 0 10em;
+.aboutExtra h2 {
+  font-family: 'Poiret One', cursive;
+  font-weight: bold;
+  letter-spacing: .5px;
+}
+
+.extrasContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0;
+}
+
+@media screen and (max-width: 660px) {
+  .extrasContainer {
+    flex-direction: column;
   }
 }
 
-.titleNavWrapper {
-  display: flex;
-  justify-content: space-between;
-  margin: 0 auto;
-  padding: 2em 0 1.25em;
-  vertical-align: middle;
-  box-sizing: border-box;
+.extra {
+  text-align: center;
+  margin: 1em 1.25em;
 }
 
-.nameContainer {
-  display: flex;
+.extra img {
+  max-height: 80px;
+  margin: 0 5px;
 }
 
-.siteTitle {
-  font-family: 'Poiret One', cursive;
-  letter-spacing: 1.75px;
-  margin: 0;
-  padding: 0;
-  vertical-align: middle;
+.extra p {
+  font-family: 'Source Sans Pro', sans-serif;
+  letter-spacing: .5px;
+  margin: .5em 0 0 0;
 }
-
-.siteTitle a {
-  text-decoration: none;
-  color: #fff;
-  transition: 0.5s;
-  padding: 0;
-  margin: 0;
-}
-
-.siteTitle a:hover {
-  text-decoration: none;
-  font-weight: 1000;
-}
-
-.desktopNav {
-  display: flex;
-  align-items: center;
-}
-
-.mainNav ul {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-  font-family: 'Poiret One', cursive;
-  margin: 0;
-}
-
-.mainNav ul li {
-  letter-spacing: 1.75px;
-  font-weight: bold;
-  font-size: 19px;
-  display: inline-block;
-  text-align: right;
-  margin: 0 0 0.5em 1em;
-}
-
-.mainNav ul li a {
-  text-decoration: none;
-  color: #fff;
-}
-

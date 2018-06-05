@@ -1,6 +1,7 @@
 export { default as Container } from './container.js'
 export { default as Header } from './Header.js'
 export { default as About } from './About.js'
+export { default as Extra } from './Extra.js'
 export { default as Projects } from './Projects.js'
 export { default as Resume } from './Resume.js'
 export { default as Frame } from './Frame.js'

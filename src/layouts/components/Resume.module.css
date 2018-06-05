@@ -1,6 +1,8 @@
 @import url('//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css');
 
 .resumeSection {
+  padding: 0 1em;
+
   background: rgba(231, 56, 39, 1);
   background: -moz-linear-gradient(
     -45deg,
@@ -48,6 +50,12 @@
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e73827', endColorstr='#f7484e', GradientType=1 );
 }
 
+@media only screen and (min-width: 850px) {
+  .resumeSection {
+    padding: 0 10em;
+  }
+}
+
 /* Section Header */
 
 .resumeBar {
@@ -60,13 +68,13 @@
 .resumeBar h1 {
   font-family: 'Poiret One', cursive;
   font-size: 3em;
-  padding: 0.5em 0.75em;
+  padding: 0.5em 0;
   margin: 0;
 }
 
 .resumeBar img {
   height: 3em;
-  padding: 0.5em 2.25em;
+  padding: 0.5em 0;
   margin: 0;
   transition: all 0.2s ease-in-out;
 }
@@ -78,7 +86,8 @@
 /* Tap for details  */
 
 .tapForDetails {
-  font-family: 'Raleway Dots', cursive;
+  font-family: 'Poiret One', cursive;
+  letter-spacing: .5px;
   color: #fff;
   text-align: center;
   padding: 1em 0 0 0;
@@ -223,12 +232,11 @@
 }
 
 .cdTimelineDate {
-  font-family: 'Roboto', sans-serif;
-  font-weight: bold;
+  font-family: 'Source Sans Pro', sans-serif;
   font-size: 12px;
+  letter-spacing: .5px;
   float: right;
   padding: 0.4em 0 0.5em;
-  opacity: 0.7;
 }
 
 a {
@@ -310,8 +318,7 @@ a {
   }
 
   .cdTimelineDate {
-    font-family: 'Raleway Dots', cursive;
-    font-weight: bold;
+    font-family: 'Source Sans Pro', sans-serif;
     font-size: 16px;
     position: absolute;
     width: 100%;
@@ -321,7 +328,7 @@ a {
   }
 }
 
-@keyframes cd-bounce-1 {
+/* @keyframes cd-bounce-1 {
   0% {
     opacity: 0;
     transform: scale(0.5);
@@ -335,7 +342,7 @@ a {
   100% {
     transform: scale(1);
   }
-}
+} */
 
 .wrapCollabsible input[type='checkbox']:checked + label {
   left: 27px;
@@ -354,10 +361,6 @@ a {
   content: ' ';
   transition: transform 0.2s ease-out;
 }
-
-/* .lblToggle:hover {
-
-} */
 
 /* Input Tag Toggle*/
 

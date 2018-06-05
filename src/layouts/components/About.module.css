@@ -5,14 +5,23 @@
   flex-direction: column;
 }
 
+@media only screen and (min-width: 700px) {
+  .about {
+    padding: 0 10em;
+  }
+}
+
 .about h2,
-.about p {
+.about h3 {
   font-family: 'Source Sans Pro', sans-serif;
+}
+
+.about h3 {
+  font-weight: 400;
 }
 
 .aboutMe {
   display: flex;
-  /* flex-wrap: wrap; */
   justify-content: center;
 }
 
@@ -81,6 +90,7 @@
 .aboutExtra h2 {
   font-family: 'Poiret One', cursive;
   font-weight: bold;
+  letter-spacing: .5px;
 }
 
 .extrasContainer {
@@ -88,6 +98,12 @@
   flex-wrap: wrap;
   justify-content: center;
   margin: 0;
+}
+
+@media screen and (max-width: 660px) {
+  .extrasContainer {
+    flex-direction: column;
+  }
 }
 
 .extra {
@@ -101,7 +117,7 @@
 }
 
 .extra p {
-  font-family: 'Raleway Dots', cursive;
-  font-weight: bold;
+  font-family: 'Source Sans Pro', sans-serif;
+  letter-spacing: .5px;
   margin: .5em 0 0 0;
 }

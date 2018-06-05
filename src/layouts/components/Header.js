@@ -2,6 +2,7 @@ import React from 'react'
 import Link from 'gatsby-link'
 import styles from './Header.module.css'
 import noelle from '../images/noelle.jpg'
+import { Container } from './'
 
 let marginY = 0
 let destination = 0
@@ -35,6 +36,7 @@ const toTop = () => {
 const Header = () => (
   <header className={styles.header}>
     <div className={styles.titleNavWrapper}>
+
       <div className={styles.nameContainer}>
         <h1 className={styles.siteTitle}>
           <a href="/" id="top">
@@ -42,6 +44,7 @@ const Header = () => (
           </a>
         </h1>
       </div>
+
       <div className={styles.desktopNav}>
         <nav className={styles.mainNav}>
           <div className={styles.navWrapper}>
@@ -71,6 +74,7 @@ const Header = () => (
           </div>
         </nav>
       </div>
+
     </div>
   </header>
 )

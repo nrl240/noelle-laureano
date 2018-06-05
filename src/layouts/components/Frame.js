@@ -3,7 +3,7 @@ import Link from 'gatsby-link'
 import styles from './Frame.module.css'
 import Container from './'
 
-import { chevronBlack } from '../images'
+import { turntable } from '../images'
 
 let marginY = 0
 let destination = 0
@@ -25,9 +25,9 @@ const toTop = elementId => {
 const Frame = () => (
   <div className={styles.frame}>
     <h2>Listen conmigo</h2>
-    <iframe
-      src="https://open.spotify.com/embed/user/nrlaureano/playlist/3q1O39ufBx8G9vhdrv2VpW"
-    />
+    <div className={styles.spotifyContainer}>
+      <iframe src="https://open.spotify.com/embed/user/nrlaureano/playlist/3q1O39ufBx8G9vhdrv2VpW" />
+    </div>
   </div>
 )
 

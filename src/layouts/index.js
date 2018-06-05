@@ -2,7 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
 
-import { Header, About, Projects, Resume, Frame, Footer } from './components'
+import { Header, About, Extra, Projects, Resume, Frame, Footer } from './components'
 
 import './index.css'
 
@@ -17,6 +17,7 @@ const Layout = ({ children, data }) => (
     />
     <Header />
     <About />
+    <Extra />
     <Projects />
     <Resume />
     <Frame />
