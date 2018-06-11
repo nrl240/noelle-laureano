@@ -54,7 +54,7 @@ const Header = () => (
                   onClick={() => initScroll('projects')}
                   href="#projects"
                 >
-                  <span>PROJECTS</span>
+                  PROJECTS
                 </a>
               </li>
               <li>
@@ -62,12 +62,12 @@ const Header = () => (
                   onClick={() => initScroll('resume')}
                   href="#resume"
                 >
-                  <span>EXPERIENCE</span>
+                  EXPERIENCE
                 </a>
               </li>
               <li>
                 <a href="mailto:nrlaureano@gmail.com?subject=HELLO!">
-                  <span>CONTACT</span>
+                  CONTACT
                 </a>
               </li>
             </ul>
