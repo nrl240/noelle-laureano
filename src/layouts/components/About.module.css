@@ -10,10 +10,11 @@
   flex-wrap: wrap;
   flex-direction: column-reverse;
   justify-content: center;
+  max-width: 100vw;
 }
 
 .aboutPhoto {
-  flex-grow: auto;
+  margin-bottom: -4px;
 }
 
 .aboutPhoto img {
@@ -38,12 +39,21 @@
 .aboutText h4 {
   font-weight: 400;
   line-height: 1.25;
+  margin-bottom: .75em;
+}
+
+.aboutText > h4:last-child {
+  margin-bottom: 0;
 }
 
 .techStack h3 {
   font-family: 'Source Sans Pro', sans-serif;
   padding: .75em 0 0;
   margin: 0;
+}
+
+.techStack h4 {
+  margin-bottom: 0;
 }
 
 /* wide screen */

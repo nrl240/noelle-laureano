@@ -4,18 +4,11 @@ import Link from 'gatsby-link'
 import styles from './Resume.module.css'
 import Container from './'
 
-import { fsaImg, mizuhoImg, lordabbettImg, browserImg, bankImg, fundImg } from '../images/resume'
+import { fsaImg, mizuhoImg, lordabbettImg, nyuImg, browserImg, bankImg, fundImg, diplomaImg } from '../images/resume'
 
 import { chevronWhite } from '../images'
 
-import {
-  excelImg,
-  sqlserverImg,
-  vbaImg,
-  bbgImg,
-  apiImg,
-  murexImg,
-} from '../images/tech'
+import { nlaureanoResume } from '../../NLaureano_Resume.pdf'
 
 let marginY = 0
 let destination = 0
@@ -99,7 +92,7 @@ export default () => (
           descriptions={[
             'Mentored 35 students on development concepts, algorithms, debugging strategies, software architecture and clean code structure',
             'Conducted technical interviews for applicants',
-            'Led interactive reviews for students to solidfy material ',
+            'Led interactive reviews for students to solidify material ',
             'Directed team building exercises to strengthen class cohesion and community',
           ]}
           siteUrl="https://www.fullstackacademy.com/"
@@ -177,10 +170,21 @@ export default () => (
           logo={lordabbettImg}
           timelineIcon={fundImg}
         />
+
+        <ResumeItem
+          id="NYU"
+          companyName="New York University"
+          jobTitle="Bachelor of Arts"
+          department="Economics, College of Arts & Science"
+          group="Business Studies, Stern School of Business "
+          dates="May 2011"
+          descriptions={[
+            'NYU Florence semester abroad'
+          ]}
+          logo={nyuImg}
+          timelineIcon={diplomaImg}
+        />
       </div>
     </section>
   </div>
 )
-
-// Previously, just before section end tag
-// <div className={`${styles.cdTimelineBlock} jsCdBlock`} />
