@@ -3,7 +3,7 @@ import Link from 'gatsby-link'
 import styles from './Projects.module.css'
 import Container from './'
 
-import { mapStackMockup, saucesomeMockup, theListeningRoomMockup } from '../images/projects'
+import { mapStackMockup, saucesomeMockup, theListeningRoomMockup, graceCardMockup } from '../images/projects'
 
 import { chevronBlack } from '../images'
 
@@ -106,16 +106,16 @@ export default () => (
         githubUrl="https://github.com/TheListeningRoom/the-listening-room"
         techImgs={[reactImg, firebaseImg]}
       />
+      <hr className={styles.projectHR} />
+      <Project
+        projectname="GRACE Card"
+        mockup={graceCardMockup}
+        excerpt='A bingo-like rubric for Fullstack Academy and Grace Hopper Program students to track their progress and develop their "Grace Shopper" e-commerce sites according to industry norms.'
+        siteUrl="https://grace-card.firebaseapp.com/"
+        githubUrl="https://github.com/nrl240/grace-card"
+        techImgs={[reactImg, firebaseImg]}
+      />
     </div>
   </div>
 )
 
-// Removed website and GitHub buttons:
-// <div className={styles.buttons}>
-//   <a href={props.siteUrl} target="_blank">
-//     <button className="button">{props.projectname}</button>
-//   </a>
-//   <a href={props.githubUrl} target="_blank">
-//     <button className="button">GitHub</button>
-//   </a>
-// </div>
