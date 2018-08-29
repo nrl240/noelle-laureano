@@ -50,7 +50,7 @@
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e73827', endColorstr='#f7484e', GradientType=1 );
 }
 
-@media only screen and (min-width: 850px) {
+@media only screen and (min-width: 950px) {
   .resumeSection {
     padding: 0 10em;
   }
@@ -208,13 +208,14 @@
 .jobTopContainer {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 0.5em;
+  align-items: center;
+  margin-bottom: 1em;
 }
 
 .jobTopContainer img {
   max-height: 25px;
   max-width: 100px;
-  margin: 0;
+  margin: 0 0 0 .5em;
 }
 
 .cdTimelineReadMore {
@@ -245,7 +246,7 @@ a {
 
 /* For wider screens */
 
-@media only screen and (min-width: 850px) {
+@media only screen and (min-width: 950px) {
   .cdTimelineContainer::before {
     /* this is the vertical line */
     left: 50%;

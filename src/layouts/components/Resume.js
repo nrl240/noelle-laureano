@@ -4,7 +4,17 @@ import Link from 'gatsby-link'
 import styles from './Resume.module.css'
 import Container from './'
 
-import { fsaImg, mizuhoImg, lordabbettImg, nyuImg, browserImg, bankImg, fundImg, diplomaImg } from '../images/resume'
+import {
+  porterandsailImg,
+  fsaImg,
+  mizuhoImg,
+  lordabbettImg,
+  nyuImg,
+  browserImg,
+  bankImg,
+  fundImg,
+  diplomaImg,
+} from '../images/resume'
 
 import { chevronWhite } from '../images'
 
@@ -27,8 +37,7 @@ const toTop = elementId => {
   window.scroll(0, marginY)
 }
 
-const ResumeItem = props =>
-{
+const ResumeItem = props => {
   return (
     <div className={`${styles.cdTimelineBlock} jsCdBlock`}>
       <div
@@ -83,12 +92,26 @@ export default () => (
       </div>
       <div className={styles.cdTimelineContainer}>
         <ResumeItem
+          id="PorterAndSail"
+          companyName="Porter & Sail"
+          jobTitle="Software Engineer"
+          department=""
+          group=""
+          dates="Aug 2018 - Present"
+          descriptions={[ 'A fresh way to book, plan and experience the modern hotel stay. Download the app!'
+          ]}
+          siteUrl="https://www.porterandsail.com/"
+          logo={porterandsailImg}
+          timelineIcon={browserImg}
+        />
+
+        <ResumeItem
           id="FullstackTF"
           companyName="Fullstack Academy"
           jobTitle="Software Engineering Teaching Fellow"
           department="NYC Web Development Fellowship"
           group="Software Engineering Immersive"
-          dates="Apr 2018 - Present"
+          dates="Apr 2018 - Jul 2018"
           descriptions={[
             'Mentored 35 students on development concepts, algorithms, debugging strategies, software architecture and clean code structure',
             'Conducted technical interviews for applicants',
@@ -178,9 +201,7 @@ export default () => (
           department="Economics, College of Arts & Science"
           group="Business Studies, Stern School of Business "
           dates="May 2011"
-          descriptions={[
-            'NYU Florence semester abroad'
-          ]}
+          descriptions={['NYU Florence semester abroad']}
           logo={nyuImg}
           timelineIcon={diplomaImg}
         />
