@@ -1,8 +1,8 @@
 import React from 'react'
-import Link from 'gatsby-link'
-
+import { Link } from "gatsby"
+import { initScroll } from './Header'
 import styles from './Resume.module.css'
-import Container from './'
+// import Container from './'
 
 import {
   porterandsailImg,
@@ -18,7 +18,7 @@ import {
 
 import { chevronWhite } from '../images'
 
-import { nlaureanoResume } from '../../NLaureano_Resume.pdf'
+// import { nlaureanoResume } from '../../NLaureano_Resume.pdf'
 
 let marginY = 0
 let destination = 0

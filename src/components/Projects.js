@@ -1,7 +1,8 @@
 import React from 'react'
-import Link from 'gatsby-link'
+import { Link } from "gatsby"
 import styles from './Projects.module.css'
-import Container from './'
+// import Container from './'
+import { initScroll } from './Header'
 
 import { mapStackMockup, saucesomeMockup, theListeningRoomMockup, graceCardMockup } from '../images/projects'
 

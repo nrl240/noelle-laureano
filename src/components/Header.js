@@ -1,15 +1,15 @@
 import React from 'react'
-import Link from 'gatsby-link'
+import { Link } from "gatsby"
 import styles from './Header.module.css'
-import noelle from '../images/noelle.jpg'
-import { Container } from './'
+// import noelle from '../images/noelle.jpg'
+// import { Container } from './'
 
 let marginY = 0
 let destination = 0
 let speed = 15
 let scroller = null
 
-const initScroll = (elementId) => {
+export const initScroll = (elementId) => {
   destination = document.getElementById(elementId).offsetTop
   scroller = setTimeout(() => {
     initScroll(elementId)
@@ -21,17 +21,17 @@ const initScroll = (elementId) => {
   window.scroll(0, marginY)
 }
 
-const toTop = () => {
-  destination = document.getElementById(elementId).offsetTop
-  scroller = setTimeout(() => {
-    initScroll(elementId)
-  }, 1)
-  marginY -= speed
-  if (marginY <= 0) {
-    clearTimeout(scroller)
-  }
-  window.scroll(0, marginY)
-}
+// const toTop = () => {
+//   destination = document.getElementById(elementId).offsetTop
+//   scroller = setTimeout(() => {
+//     initScroll(elementId)
+//   }, 1)
+//   marginY -= speed
+//   if (marginY <= 0) {
+//     clearTimeout(scroller)
+//   }
+//   window.scroll(0, marginY)
+// }
 
 const Header = () => (
   <header className={styles.header}>

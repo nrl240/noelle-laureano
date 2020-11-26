@@ -1,9 +1,7 @@
 import React from 'react'
-import Link from 'gatsby-link'
 import styles from './Frame.module.css'
-import Container from './'
-
-import { turntable } from '../images'
+import { initScroll } from './Header'
+// import { turntable } from '../images'
 
 let marginY = 0
 let destination = 0
@@ -26,7 +24,7 @@ const Frame = () => (
   <div className={styles.frame}>
     <h2>Listen conmigo</h2>
     <div className={styles.spotifyContainer}>
-      <iframe src="https://open.spotify.com/embed/user/nrlaureano/playlist/3q1O39ufBx8G9vhdrv2VpW" />
+      <iframe src="https://open.spotify.com/embed/playlist/3q1O39ufBx8G9vhdrv2VpW" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
     </div>
   </div>
 )

@@ -1,10 +1,11 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
+import { graphql } from "gatsby"
 
-import { Header, About, Extra, Projects, Resume, Frame, Footer } from './components'
+import { Header, About, Extra, Projects, Resume, Frame, Footer } from './'
 
-import './index.css'
+import './layout.css'
 
 const Layout = ({ children, data }) => (
   <div>
