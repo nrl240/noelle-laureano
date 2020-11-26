@@ -1,10 +1,4 @@
 import React from "react"
-import Layout from "../components/layout"
-
 export default function Home() {
-  return (
-    <Layout>
-      <div>Hello World</div>
-    </Layout>
-  )
+  return <div style={{ color: `purple`, fontSize: `72px` }}>Hello Gatsby!</div>
 }
