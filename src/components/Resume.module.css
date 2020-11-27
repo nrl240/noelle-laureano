@@ -1,3 +1,13 @@
+button {
+  background: none;
+  color: inherit;
+  border: none;
+  padding: 0;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
+}
+
 @import url('//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css');
 
 .resumeSection {
@@ -87,12 +97,11 @@
 
 .tapForDetails {
   font-family: 'Poiret One', cursive;
-  letter-spacing: .5px;
+  letter-spacing: 0.5px;
   color: #fff;
   text-align: center;
   padding: 1em 0 0 0;
 }
-
 
 /* Timeline */
 
@@ -215,7 +224,7 @@
 .jobTopContainer img {
   max-height: 25px;
   max-width: 100px;
-  margin: 0 0 0 .5em;
+  margin: 0 0 0 0.5em;
 }
 
 .cdTimelineReadMore {
@@ -235,7 +244,7 @@
 .cdTimelineDate {
   font-family: 'Source Sans Pro', sans-serif;
   font-size: 12px;
-  letter-spacing: .5px;
+  letter-spacing: 0.5px;
   float: right;
   padding: 0.4em 0 0.5em;
 }

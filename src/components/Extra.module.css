@@ -55,7 +55,7 @@
 .aboutExtra h2 {
   font-family: 'Poiret One', cursive;
   font-weight: bold;
-  letter-spacing: .5px;
+  letter-spacing: 0.5px;
 }
 
 .extrasContainer {
@@ -83,6 +83,6 @@
 
 .extra p {
   font-family: 'Source Sans Pro', sans-serif;
-  letter-spacing: .5px;
-  margin: .5em 0 0 0;
+  letter-spacing: 0.5px;
+  margin: 0.5em 0 0 0;
 }

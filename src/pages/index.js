@@ -1,4 +1,6 @@
-import React from "react"
+import React from 'react'
+import { Layout } from '../components'
+
 export default function Home() {
-  return <div style={{ color: `purple`, fontSize: `72px` }}>Hello Gatsby!</div>
+  return <Layout />
 }

@@ -9,17 +9,17 @@ const Extra = () => (
 
     <div className={styles.extrasContainer}>
       <div className={styles.extra}>
-        <img src={realmadrid} />
+        <img alt='Real Madrid' src={realmadrid} />
         <p>Watching soccer</p>
       </div>
 
       <div className={styles.extra}>
-        <img src={concert} />
+        <img alt='Concerts' src={concert} />
         <p>At a concert</p>
       </div>
 
       <div className={styles.extra}>
-        <img src={plane} />
+        <img alt='Traveling to visit friends' src={plane} />
         <p>Visiting friends</p>
       </div>
     </div>

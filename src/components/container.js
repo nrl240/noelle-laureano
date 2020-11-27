@@ -5,6 +5,3 @@ export default ({ children }) => (
     {children}
   </div>
 )
-
-// margin: '1em 3em'
-// , maxWidth: 600
