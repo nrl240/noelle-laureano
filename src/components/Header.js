@@ -34,13 +34,13 @@ const Header = () => (
           <div className={styles.navWrapper}>
             <ul>
               <li>
-                <a onClick={() => initScroll('projects')} href='#projects'>
-                  PROJECTS
+                <a onClick={() => initScroll('resume')} href='#resume'>
+                  EXPERIENCE
                 </a>
               </li>
               <li>
-                <a onClick={() => initScroll('resume')} href='#resume'>
-                  EXPERIENCE
+                <a onClick={() => initScroll('projects')} href='#projects'>
+                  PROJECTS
                 </a>
               </li>
               <li>
