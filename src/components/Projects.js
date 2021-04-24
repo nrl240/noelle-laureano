@@ -58,7 +58,7 @@ const Project = (props) => {
   )
 }
 
-export default () => (
+const Projects = () => (
   <div id='projects' className={styles.projectsSection}>
     <div className={styles.projectsBar}>
       <h1>Projects</h1>
@@ -105,3 +105,5 @@ export default () => (
     </div>
   </div>
 )
+
+export default Projects

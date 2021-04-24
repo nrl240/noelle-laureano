@@ -17,9 +17,9 @@ const Layout = ({ children, data }) => (
     />
     <Header />
     <About />
-    <Extra />
-    <Projects />
     <Resume />
+    <Projects />
+    <Extra />
     <Frame />
     <Footer />
   </div>

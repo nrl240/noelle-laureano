@@ -30,13 +30,15 @@ const About = () => (
         <div className={styles.techStack}>
           <div>
             <h3>Front-End</h3>
-            <h4>JavaScript • ReactJS • Redux • HTML5 • CSS3 • Sass</h4>
+            <h4>JavaScript • ReactJS • Redux • HTML5 • CSS3</h4>
           </div>
           <div>
             <h3>Back-End</h3>
             <h4>
-              Ruby on Rails • NodeJS • Express • AWS • MySQL • PostgreSQL • MS
-              SQL Server • Firebase
+              NodeJS • Express • Ruby on Rails • PostgreSQL
+            </h4>
+            <h4>
+              MySQL • MS SQL Server • AWS
             </h4>
           </div>
         </div>

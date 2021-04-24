@@ -55,9 +55,9 @@ const ResumeItem = (props) => {
       </div>
     </div>
   )
-}
+};
 
-export default () => (
+const Resume = () => (
   <div id='resume' className={styles.resumeSection}>
     <div className={styles.resumeBar}>
       <h1>Experience</h1>
@@ -67,18 +67,55 @@ export default () => (
     </div>
     <section className={`${styles.cdTimeline} jsCdTimeline`}>
       <div className={styles.tapForDetails}>
-        <span>tap card for details</span>
+        <span>click card for details</span>
       </div>
       <div className={styles.cdTimelineContainer}>
+        <ResumeItem
+          id='FullstackSrInstructor'
+          companyName='Fullstack Academy'
+          jobTitle='Senior Instructor'
+          department=''
+          group='Software Engineering Immersive'
+          dates='Apr 2021 - Present'
+          descriptions={['Freshly promoted!']}
+          siteUrl='https://www.fullstackacademy.com/'
+          logo={fsaImg}
+          timelineIcon={browserImg}
+        />
+
+        <ResumeItem
+          id='FullstackInstructor'
+          companyName='Fullstack Academy'
+          jobTitle='Instructor'
+          department=''
+          group='Software Engineering Immersive'
+          dates='Sep 2019 - Mar 2021'
+          descriptions={[
+            `Taught all 54 unique academic lectures to cohorts upwards of 50 students – topics include vanilla JavaScript, Node, Express, RESTful API, RDBMSs (PostgreSQL), ORMs, React, Redux, Socket.IO, data structures, algorithm analysis, and authentication`,
+            `Provided project management and code reviews on student projects by making sure they were on schedule and produced following industry best practices`,
+            `Helped iterate on full-stack curriculum based on student achievement data, core business needs, and the evolving trends of the software engineer industry, including the migration of codebases to the latest ECMAScript version`,
+            `Created a comprehensive proposal template and quality assurance protocol to introduce structure and process to the Instructional Team`
+          ]}
+          siteUrl='https://www.fullstackacademy.com/'
+          logo={fsaImg}
+          timelineIcon={browserImg}
+        />
+
         <ResumeItem
           id='PorterAndSail'
           companyName='Porter & Sail'
           jobTitle='Software Engineer'
           department=''
           group=''
-          dates='Aug 2018 - Present'
+          dates='Aug 2018 - Aug 2019'
           descriptions={[
-            'A fresh way to book, plan and experience the modern hotel stay. Download the app!'
+            `Built APIs using Ruby on Rails that handle complex data models efficiently`,
+            `Worked closely with the CTO and Director of Product to conceptualize and develop features from a redesigned ”discovery feed” to new hotel guest pre-arrival flow`,
+            `Led integration of React into the web application`,
+            `Took complete ownership of high-trafficked features including the pre-arrival guest flow`,
+            `Integrated third-party APIs`,
+            `Actively recommended and implemented enhancement tools to streamline processes such as client contract automation and scheduled job to flag permanently closed venues`,
+            `Heavily participated in UX and UI conversations`
           ]}
           siteUrl='https://www.porterandsail.com/'
           logo={porterandsailImg}
@@ -188,4 +225,6 @@ export default () => (
       </div>
     </section>
   </div>
-)
+);
+
+export default Resume
