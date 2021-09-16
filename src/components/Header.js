@@ -1,5 +1,5 @@
 import React from 'react'
-import styles from './Header.module.css'
+import * as styles from './Header.module.css'
 
 let marginY = 0
 let destination = 0
@@ -31,7 +31,7 @@ const Header = () => (
 
       <div className={styles.desktopNav}>
         <nav className={styles.mainNav}>
-          <div className={styles.navWrapper}>
+          <div>
             <ul>
               <li>
                 <a onClick={() => initScroll('resume')} href='#resume'>

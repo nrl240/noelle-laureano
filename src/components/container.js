@@ -1,7 +1,9 @@
 import React from 'react'
 
-export default ({ children }) => (
+const container = ({ children }) => (
   <div style={{ padding: '0 8em' }}>
     {children}
   </div>
 )
+
+export default container;

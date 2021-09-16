@@ -1,5 +1,5 @@
 import React from 'react'
-import styles from './Projects.module.css'
+import * as styles from './Projects.module.css'
 import { scrollToTop } from '../utils'
 
 import {

@@ -1,10 +1,10 @@
 import React from 'react'
-import styles from './Frame.module.css'
+import * as styles from './Frame.module.css'
 
 const Frame = () => (
   <div className={styles.frame}>
     <h2>Listen conmigo</h2>
-    <div className={styles.spotifyContainer}>
+    <div>
       <iframe
         title="Noelle Laureano's Spotify Playlist 'conmigo'"
         src='https://open.spotify.com/embed/playlist/3q1O39ufBx8G9vhdrv2VpW'

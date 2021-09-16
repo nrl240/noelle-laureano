@@ -1,5 +1,5 @@
 import React from 'react'
-import styles from './Extra.module.css'
+import * as styles from './Extra.module.css'
 
 import { concert, realmadrid, plane } from '../images/extra'
 

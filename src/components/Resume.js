@@ -1,5 +1,5 @@
 import React from 'react'
-import styles from './Resume.module.css'
+import * as styles from './Resume.module.css'
 import { scrollToTop } from '../utils'
 
 import {

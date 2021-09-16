@@ -1,5 +1,5 @@
 import React from 'react'
-import styles from './About.module.css'
+import * as styles from './About.module.css'
 
 import { noelle } from '../images'
 
