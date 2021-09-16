@@ -3,6 +3,7 @@ import * as styles from './Resume.module.css'
 import { scrollToTop } from '../utils'
 
 import {
+  clicktripzImg,
   porterandsailImg,
   fsaImg,
   mizuhoImg,
@@ -70,14 +71,31 @@ const Resume = () => (
         <span>click card for details</span>
       </div>
       <div className={styles.cdTimelineContainer}>
+      <ResumeItem
+          id='ClicktripzSWE'
+          companyName='Clicktripz'
+          jobTitle='Software Engineer'
+          department=''
+          group=''
+          dates='Apr 2021 - Present'
+          descriptions={[
+            'Building innovative software solutions to serve the needs of suppliers, publishers, advertisers and travelers'
+          ]}
+          siteUrl='https://www.clicktripz.com/'
+          logo={clicktripzImg}
+          timelineIcon={browserImg}
+        />
+
         <ResumeItem
           id='FullstackSrInstructor'
           companyName='Fullstack Academy'
           jobTitle='Senior Instructor'
           department=''
           group='Software Engineering Immersive'
-          dates='Apr 2021 - Present'
-          descriptions={['Freshly promoted!']}
+          dates='Apr 2021 - May 2021'
+          descriptions={[
+            `Everybody's favorite instructor`
+          ]}
           siteUrl='https://www.fullstackacademy.com/'
           logo={fsaImg}
           timelineIcon={browserImg}

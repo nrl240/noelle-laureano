@@ -3,6 +3,8 @@ export { default as mizuhoImg } from './mizuho.png'
 export { default as fsaImg } from './fsa.png'
 export { default as nyuImg } from './nyu.png'
 export { default as porterandsailImg } from './porterandsail.png'
+export { default as clicktripzImg } from './clicktripz.png'
+
 
 
 export { default as officeImg } from './office-block.png'
