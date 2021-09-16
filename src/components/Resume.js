@@ -77,7 +77,7 @@ const Resume = () => (
           jobTitle='Software Engineer'
           department=''
           group=''
-          dates='Apr 2021 - Present'
+          dates='Jun 2021 - Present'
           descriptions={[
             'Building innovative software solutions to serve the needs of suppliers, publishers, advertisers and travelers'
           ]}
